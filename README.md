@@ -1,8 +1,6 @@
 # LocalEvents2
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/local_events2`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Local Events! This Ruby Gem will request location details and an optional activity type filter from the user. Once submitted, the LocalEvents will search "eventsnearhere.com" and list upcoming events nearby. The user can then select an event to see it's details.
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use LocalEvents, simply run the CLI and it will bring you to the main menu where you may enter one of several commands. To utilize it for it's intended purpose, follow these instructions:
+
+1. Select 'new search' to begin.
+2. The app will ask you to enter a City and a State Code as well as provide you a list of activity type filters that you may select from.
+3. Once these details are entered, the gem will use the data to search the website and return to you a list of events, their location, and their dates.
+4. You may then select an event to get the event's address, contact info, description, and a link to the event's webpage.
+5. Once complete, you may enter 'list results' to go back to the event list, or 'new search' to enter new criteria.
 
 ## Development
 
