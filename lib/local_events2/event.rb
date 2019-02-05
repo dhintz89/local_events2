@@ -1,6 +1,6 @@
 # Event class used for storing event info found by Scraper
 
-class LocalEvents::Event
+class LocalEvents2::Event
   attr_accessor :name, :location, :start_date, :end_date, :description, :page_link, :price, :address, :contact_name, :phone, :email, :event_link
   
   @@all = []
@@ -71,9 +71,9 @@ class LocalEvents::Event
     puts "Here are your upcoming events".colorize(:yellow)
     puts "Please select an event to learn more".colorize(:yellow)
     puts
-    self.all.each_with_index(1) do |event, i|
-      puts "#{self.name}: "
-      puts "From #{self.start_date} Through #{self.end_date} | #{self.location}"
+    self.all.each.with_index(1) do |event, i|
+      puts "#{i}. #{event.name}: "
+      puts "From #{event.start_date} Through #{event.end_date} | #{event.location}"
       puts "----"
     end
     puts "**end of list, please make a selection above**".colorize(:yellow)
